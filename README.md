@@ -4,10 +4,9 @@ refer this for more information
 
 While running in Local use
 
-pip install groq
-pip install flask 
- These are the required modules
+pip install groq <br>
+pip install flask <br>
+ These are the required modules <br>
 
  further changes will be updated in README
 
- 
