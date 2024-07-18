@@ -4,7 +4,7 @@ from groq import Groq
 app = Flask(__name__)
 
 # Initialize Groq client
-client = Groq(api_key="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")
+client = Groq(api_key="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")
 
 @app.route('/')
 def index():
