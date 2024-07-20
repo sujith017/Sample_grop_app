@@ -3,6 +3,8 @@ refer this for more information
 ![Documentation Link]("https://console.groq.com/docs/quickstart")
 While running in Local use
 
-pip install groq <br>
-pip install flask <br>
+
  These are the required modules <br>
+
+ pip install groq <br>
+pip install flask <br>
