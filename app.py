@@ -4,7 +4,7 @@ from groq import Groq
 app = Flask(__name__)
 
 # Initialize Groq client
-client = Groq(api_key="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")
+client = Groq(api_key="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")
 
 @app.route('/')
 def index():
@@ -13,13 +13,13 @@ def index():
 @app.route('/chat', methods=['POST'])
 def chat():
     user_input = request.form['user_input']
-    
-    # Call Groq API
+    prompt = "    Find the Sentiment to the given sentence and give only the sentiment like POSITIVE NEGATIVE NEUTRAL"
+    newstr = " ".join((user_input, prompt))
     chat_completion = client.chat.completions.create(
         messages=[
             {
                 "role": "user",
-                "content": user_input,
+                "content": newstr,
             }
         ],
         model="llama3-8b-8192",

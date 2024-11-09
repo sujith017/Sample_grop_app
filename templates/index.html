@@ -1,11 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sentiment Analysis</title>
+    <link rel="stylesheet" type="text/css" href="in.css">
 </head>
 <body>
-    <p>Hello</p>
+    <h1>Enter the comment </h1><br>
+    <br> 
+    <form action="/chat" method="post">
+        <label for="user_input">Enter your message:</label>
+        <input type="text" id="user_input" name="user_input">
+        <button type="submit">Send</button>
+    </form><br>
+    {% if response %}
+        <h2>Response:</h2>
+        <p>{{ response }}</p>
+    {% endif %}
 </body>
 </html>
